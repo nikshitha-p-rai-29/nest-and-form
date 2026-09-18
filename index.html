@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nest & Form | Interior Design</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            NEST & FORM
+        </div>
+
+
+        <nav id="mainNav">
+
+            <a href="#home">Home</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#about">About</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+
+        <button class="consult-btn">
+            Book a Consultation
+        </button>
+
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+
+        <button class="theme-toggle" id="themeToggle">
+            🌙
+        </button>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================= -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="small-title">
+                    INTERIOR DESIGN STUDIO
+                </p>
+
+
+                <h1>
+                    Spaces Made<br>
+                    for Living.
+                </h1>
+
+
+                <p>
+                    Thoughtfully designed interiors that bring
+                    comfort, character and beauty into everyday life.
+                </p>
+
+
+                <a href="#projects" class="hero-btn">
+                    Explore Designs
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PROJECTS
+        ========================= -->
+
+        <section id="projects" class="projects">
+
+
+            <div class="section-heading">
+
+                <p>OUR WORK</p>
+
+                <h2>
+                    Designed for the way<br>
+                    you live.
+                </h2>
+
+            </div>
+
+
+
+            <!-- FILTER BUTTONS -->
+
+            <div class="filter-buttons">
+
+                <button class="active" data-filter="all">
+                    All
+                </button>
+
+                <button data-filter="living">
+                    Living Room
+                </button>
+
+                <button data-filter="bedroom">
+                    Bedroom
+                </button>
+
+                <button data-filter="kitchen">
+                    Kitchen
+                </button>
+
+                 <button data-filter="bathroom">
+                    Bathroom
+                </button>
+
+                <button data-filter="office">
+                    Office
+                </button>
+
+            </div>
+
+
+
+            <!-- MAIN GALLERY -->
+
+            <div class="gallery">
+
+
+                <!-- LIVING ROOM -->
+
+                <div class="design-card" data-category="living">
+
+                    <img
+                        src="images/living1.avif"
+                        alt="Modern Living Room"
+                    >
+
+                    <div class="card-info">
+
+                        <h3>
+                            Modern Living
+                        </h3>
+
+                        <p>
+                            Living Room • Minimal
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- BEDROOM -->
+
+                <div class="design-card" data-category="bedroom">
+
+                    <img
+                        src="images/bedroom1.avif"
+                        alt="Quiet Bedroom"
+                    >
+
+                    <div class="card-info">
+
+                        <h3>
+                            Quiet Retreat
+                        </h3>
+
+                        <p>
+                            Bedroom • Contemporary
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- KITCHEN -->
+
+                <div class="design-card" data-category="kitchen">
+
+                    <img
+                        src="images/kitchen1.avif"
+                        alt="Warm Kitchen"
+                    >
+
+                    <div class="card-info">
+
+                        <h3>
+                            Warm Kitchen
+                        </h3>
+
+                        <p>
+                            Kitchen • Modern
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- BATHROOM -->
+
+<div class="design-card" data-category="bathroom">
+
+    <img
+        src="images/bathroom1.avif"
+        alt="Elegant Bathroom"
+    >
+
+    <div class="card-info">
+
+        <h3>
+            Elegant Bathroom
+        </h3>
+
+        <p>
+            Bathroom • Modern
+        </p>
+
+    </div>
+
+</div>
+
+
+
+                <!-- OFFICE -->
+
+                <div class="design-card" data-category="office">
+
+                    <img
+                        src="images/office1.avif"
+                        alt="Creative Workspace"
+                    >
+
+                    <div class="card-info">
+
+                        <h3>
+                            Creative Workspace
+                        </h3>
+
+                        <p>
+                            Office • Minimal
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+           <!-- CATEGORY DETAILS -->
+
+<section class="category-details" id="categoryDetails">
+
+    <button class="category-close" id="categoryClose">
+        ×
+    </button>
+
+    <div class="category-details-heading">
+
+        <p>SELECTED COLLECTION</p>
+
+        <h2 id="categoryTitle"></h2>
+
+        <p id="categoryDescription"></p>
+
+    </div>
+
+    <div class="category-images" id="categoryImages">
+    </div>
+
+</section>
+
+        </section>
+        
+
+
+
+        <!-- =========================
+             SERVICES
+        ========================= -->
+
+        <section id="services" class="services">
+
+
+            <p>
+                WHAT WE DO
+            </p>
+
+
+            <h2>
+                Our Services
+            </h2>
+
+
+            <div class="service-container">
+
+
+                <div class="service">
+
+                    <span>
+                        01
+                    </span>
+
+                    <h3>
+                        Interior Design
+                    </h3>
+
+                    <p>
+                        Complete interior design solutions
+                        created around your lifestyle.
+                    </p>
+
+                </div>
+
+
+
+                <div class="service">
+
+                    <span>
+                        02
+                    </span>
+
+                    <h3>
+                        Space Planning
+                    </h3>
+
+                    <p>
+                        Thoughtful layouts that make every
+                        part of your home useful.
+                    </p>
+
+                </div>
+
+
+
+                <div class="service">
+
+                    <span>
+                        03
+                    </span>
+
+                    <h3>
+                        Home Styling
+                    </h3>
+
+                    <p>
+                        Finishing touches that bring your
+                        space together.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ABOUT
+        ========================= -->
+
+        <section id="about" class="about">
+
+
+            <div>
+
+                <p>
+                    ABOUT US
+                </p>
+
+
+                <h2>
+                    Designing homes<br>
+                    with personality.
+                </h2>
+
+            </div>
+
+
+            <p>
+                We create thoughtful interiors that balance
+                beauty, comfort and functionality. Every space
+                is designed to reflect the people who live in it.
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTACT
+        ========================= -->
+
+        <section id="contact" class="contact">
+
+
+            <p>
+                LET'S WORK TOGETHER
+            </p>
+
+
+            <h2>
+                Have a space<br>
+                in mind?
+            </h2>
+
+
+            <form>
+
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+
+                <textarea
+                    placeholder="Tell us about your project"
+                    required
+                ></textarea>
+
+
+                <button type="submit">
+                    Send Enquiry
+                </button>
+
+
+                <p
+                    class="success-message"
+                    id="successMessage"
+                >
+                    Thank you! Your enquiry has been sent successfully.
+                </p>
+
+
+            </form>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <p>
+            © 2026 NEST & FORM
+        </p>
+
+        <p>
+            Interior Design Studio
+        </p>
+
+    </footer>
+
+
+
+    
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
